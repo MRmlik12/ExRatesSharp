@@ -1,0 +1,18 @@
+language: csharp
+solution: ExRatesSharp.sln
+os: linux
+mono: none
+dotnet: 3.1.110
+install:
+  - dotnet restore
+script: 
+  - dotnet build -C Release
+  - dotnet test
+before_deploy:
+  - dotnet pack -C Release
+deploy:
+  skip_cleanup: true
+  provider: script
+  script: dotnet nuget push ./ExRatesSharp/bin/Release/ExRatesSharp.*.nupkg  -k $NUGET_API -s https://api.nuget.org/v3/index.json --skip-duplicate
+  on:
+    branch: master
