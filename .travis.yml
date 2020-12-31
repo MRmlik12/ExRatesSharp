@@ -13,6 +13,6 @@ before_deploy:
 deploy:
   skip_cleanup: true
   provider: script
-  script: dotnet nuget push ./ExRatesSharp/bin/Release/ExRatesSharp.*.nupkg  -k $NUGET_API -s https://api.nuget.org/v3/index.json --skip-duplicate
+  script: dotnet nuget push ./ExRatesSharp/bin/Release/ExRatesSharp.*.nupkg  -k $NUGET -s https://api.nuget.org/v3/index.json --skip-duplicate
   on:
     branch: master

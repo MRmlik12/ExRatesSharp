@@ -86,7 +86,6 @@ public DateTimeOffset EndAt { get; set; }
 
 
 ## Supported Curriencies
-
 | Code | Currency Name         |
 |------|-----------------------|
 | AUD  | Australian dollar     |
@@ -128,7 +127,7 @@ public DateTimeOffset EndAt { get; set; }
 $ git clone https://github.com/MRmlik12/ExRatesSharp.git
 $ dotnet restore
 $ dotnet test
-$ dotnet build package -c 
+$ dotnet build package
 ```
 
 # Used Libraries
