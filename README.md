@@ -1,4 +1,5 @@
 # ExRatesSharp
+[![Build Status](https://travis-ci.com/MRmlik12/ExRatesSharp.svg?branch=master)](https://travis-ci.com/MRmlik12/ExRatesSharp)
 
 A .NET wrapper for [exchangeratesapi.io](http://exchangeratesapi.io) to get exchange rates history and more.
 
