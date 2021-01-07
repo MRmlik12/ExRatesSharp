@@ -48,7 +48,7 @@ var result = await ExchangeRatesApi.GetHistoricalRates(new DateTime(2010, 1, 12)
 ```csharp
 using ExRatesSharp;
 
-var result = await ExchangeRatesApi.GetCustomRates(new DateTime(2010, 1, 12), new DateTime(2020, 12, 12));
+var result = await ExchangeRatesApi.GetCustomRates(new DateTime(2010, 1, 12), new DateTime(2010, 12, 12));
 
 //Returns CustomResponse
 ```
@@ -57,7 +57,7 @@ var result = await ExchangeRatesApi.GetCustomRates(new DateTime(2010, 1, 12), ne
 ```csharp
 using ExRatesSharp;
 
-var result = await ExchangeRatesApi.GetCustomRates(new DateTime(2010, 1, 12), new DateTime(2020, 12, 12), "USD");
+var result = await ExchangeRatesApi.GetCustomRates(new DateTime(2010, 1, 12), new DateTime(2010, 12, 12), "USD");
 
 //Returns CustomResponse
 ```
@@ -67,7 +67,7 @@ var result = await ExchangeRatesApi.GetCustomRates(new DateTime(2010, 1, 12), ne
 ```csharp
 using ExRatesSharp;
 
-var result = await ExchangeRatesApi.GetCustomRates(new DateTime(2020, 1, 1), new DateTime(2020, 2, 1), "EUR", new []{"PLN", "PHP"});
+var result = await ExchangeRatesApi.GetCustomRates(new DateTime(2010, 1, 12), new DateTime(2010, 12, 12), "EUR", new []{"PLN", "PHP"});
 
 //Returns CustomResponse
 ```
@@ -123,12 +123,13 @@ public DateTimeOffset EndAt { get; set; }
 | USD  | US dollar             |
 | ZAR  | South African rand    |
 
-# How to build from source code
+# How To Build From Source Code
 ```bash
 $ git clone https://github.com/MRmlik12/ExRatesSharp.git
 $ dotnet restore
 $ dotnet test
-$ dotnet build package
+$ dotnet build
+$ dotnet pack
 ```
 
 # Used Libraries

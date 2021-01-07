@@ -10,6 +10,8 @@
         <PackageLicenseUrl>https://github.com/MRmlik12/ExRatesSharp/blob/master/LICENSE.md</PackageLicenseUrl>
         <RepositoryUrl>https://github.com/MRmlik12/ExRatesSharp</RepositoryUrl>
         <PackageTags>currency, financial</PackageTags>
+        <PackageVersion>1.0.1</PackageVersion>
+        <Nullable>disable</Nullable>
     </PropertyGroup>
 
     <ItemGroup>

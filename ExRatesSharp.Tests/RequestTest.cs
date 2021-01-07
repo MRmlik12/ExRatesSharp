@@ -14,7 +14,21 @@ namespace ExRatesSharp.Tests
             var result = await ExchangeRatesApi.GetLatest();
             Assert.NotNull(result);
         }
+        
+        [Fact]
+        public async void GetLatestRatesWithBaseCurrencyEUR()
+        {
+            var result = await ExchangeRatesApi.GetLatest("EUR");
+            Assert.NotNull(result);
+        }
 
+        [Fact]
+        public async void GetLatestRatesWithSymbolUSDAndBaseCurrencyEUR()
+        {
+            var result = await ExchangeRatesApi.GetLatest("EUR", new []{"USD"});
+            Assert.NotNull(result);
+        }
+        
         [Fact]
         public async void GetRatesFrom2010_01_12()
         {

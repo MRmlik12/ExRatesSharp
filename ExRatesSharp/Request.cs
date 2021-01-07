@@ -21,7 +21,8 @@ namespace ExRatesSharp
         {
             var client = new RestClient(url);
             var request = new RestRequest(method);
-            request.AddParameter("symbols", string.Join(",", symbols));
+            if (symbols != null)
+                request.AddParameter("symbols", symbols.Length == 1 ? symbols[0] : string.Join(",", symbols));
             request.AddParameter("base", baseCurrency);
 
             var response = await client.ExecuteAsync(request);
@@ -34,7 +35,7 @@ namespace ExRatesSharp
             var client = new RestClient(url);
             var request = new RestRequest(method);
             if (symbols != null)
-                request.AddParameter("symbols", string.Join(",", symbols));
+                request.AddParameter("symbols", symbols.Length == 1 ? symbols[0] : string.Join(",", symbols));
             if (baseCurrency != null)
                 request.AddParameter("base", baseCurrency != "" ? baseCurrency : "EUR");
             request.AddParameter("start_at", startAt.ToString("yyyy-MM-dd"));
