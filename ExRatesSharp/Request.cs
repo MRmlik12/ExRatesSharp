@@ -6,7 +6,7 @@ using RestSharp;
 
 namespace ExRatesSharp
 {
-    public static class Request<T>
+    internal static class Request<T>
     {
         public static async Task<T> SendRequest(string url, Method method)
         {
