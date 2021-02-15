@@ -15,4 +15,4 @@ deploy:
   provider: script
   script: dotnet nuget push ./ExRatesSharp/bin/Release/ExRatesSharp.*.nupkg  -k $NUGET -s https://api.nuget.org/v3/index.json --skip-duplicate
   on:
-    branch: master
+    branch: main
