@@ -1,5 +1,5 @@
 # ExRatesSharp
-[![Build Status](https://travis-ci.com/MRmlik12/ExRatesSharp.svg?branch=master)](https://travis-ci.com/MRmlik12/ExRatesSharp) [![NuGet version (SoftCircuits.Silk)](https://img.shields.io/nuget/v/ExRatesSharp.svg?style=flat)](https://www.nuget.org/packages/ExRatesSharp/)
+[![Build Status](https://github.com/MRmlik12/ExRatesSharp/workflows/build,%20test%20&%20deploy/badge.svg)]() [![NuGet version (SoftCircuits.Silk)](https://img.shields.io/nuget/v/ExRatesSharp.svg?style=flat)](https://www.nuget.org/packages/ExRatesSharp/)
 
 A .NET wrapper for [exchangeratesapi.io](http://exchangeratesapi.io) to get exchange rates history and more.
 
